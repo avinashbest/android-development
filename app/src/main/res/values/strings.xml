@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Birthday Greet</string>
+    <string name="enter_the_name">Enter the name</string>
+    <string name="create_birthday_card">Create Birthday Card</string>
+    <string name="avinash_kumar">Avinash Kumar</string>
+    <string name="happy_birthday">Happy Birthday</string>
+</resources>
