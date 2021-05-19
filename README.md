@@ -3,6 +3,10 @@
 - It gives you a quick and simple notepad editing experience when you write notes, memos, e-mails, messages, shopping lists and to-do lists. 
 - Taking notes with Notes Taking is easier than any other notepad or memo pad app.
 
+# How the various classes interacting with each other
+
+![image](preview/components.png)
+
 # Preview
 
-![](preview/preview.gif)
+![image](preview/preview.gif)
