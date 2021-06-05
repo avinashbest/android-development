@@ -11,7 +11,6 @@
         android:id="@+id/table_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
@@ -19,6 +18,7 @@
         <TableRow>
 
             <TextView
+                android:id="@+id/all_clear"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -26,6 +26,7 @@
                 android:text="AC" />
 
             <ImageView
+                android:id="@+id/backspace"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -34,6 +35,7 @@
                 android:src="@drawable/backspace_icon" />
 
             <TextView
+                android:id="@+id/modulo"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -41,6 +43,7 @@
                 android:text="%" />
 
             <TextView
+                android:id="@+id/divide"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -51,24 +54,28 @@
         <TableRow>
 
             <TextView
+                android:id="@+id/seven"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="7" />
 
             <TextView
+                android:id="@+id/eight"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="8" />
 
             <TextView
+                android:id="@+id/nine"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="9" />
 
             <TextView
+                android:id="@+id/multiply"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -79,24 +86,28 @@
         <TableRow>
 
             <TextView
+                android:id="@+id/four"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="4" />
 
             <TextView
+                android:id="@+id/five"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="5" />
 
             <TextView
+                android:id="@+id/six"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="6" />
 
             <TextView
+                android:id="@+id/minus"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -107,24 +118,28 @@
         <TableRow>
 
             <TextView
+                android:id="@+id/one"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="1" />
 
             <TextView
+                android:id="@+id/two"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="2" />
 
             <TextView
+                android:id="@+id/three"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="3" />
 
             <TextView
+                android:id="@+id/plus"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -135,6 +150,7 @@
         <TableRow>
 
             <TextView
+                android:id="@+id/plus_minus"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -142,12 +158,14 @@
                 android:text="+/-" />
 
             <TextView
+                android:id="@+id/zero"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:text="0" />
 
             <TextView
+                android:id="@+id/decimal"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -155,6 +173,7 @@
                 android:text="." />
 
             <TextView
+                android:id="@+id/equalTo"
                 style="@style/Number"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
@@ -168,7 +187,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:padding="10dp"
         android:textColor="@color/white"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/result"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -180,6 +201,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#AEAEAE"
+        android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/table_layout"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintLeft_toLeftOf="parent"
