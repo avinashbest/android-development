@@ -116,7 +116,6 @@ class CalculatorActivity : AppCompatActivity() {
             expression.append(value)
             result.text = ""
         }
-
         result.hint = expression.text
     }
 }
