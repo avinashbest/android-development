@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CalculatorActivity">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <!--Row 1-->
+        <TableRow>
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="AC" />
+
+            <ImageView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_red_dark"
+                android:scaleType="centerInside"
+                android:src="@drawable/backspace_icon" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/purple_200"
+                android:text="%" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/purple_200"
+                android:text="/" />
+        </TableRow>
+        <!--Row 2-->
+        <TableRow>
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="7" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="8" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="9" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/purple_200"
+                android:text="*" />
+        </TableRow>
+        <!--Row 3-->
+        <TableRow>
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="4" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="5" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="6" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/purple_200"
+                android:text="-" />
+        </TableRow>
+        <!--Row 4-->
+        <TableRow>
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="1" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="2" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="3" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/purple_200"
+                android:text="+" />
+        </TableRow>
+        <!--Row 5-->
+        <TableRow>
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/purple_200"
+                android:text="+/-" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:text="0" />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/purple_200"
+                android:text="." />
+
+            <TextView
+                style="@style/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_red_light"
+                android:text="=" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/table_layout"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
