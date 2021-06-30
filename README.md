@@ -6,5 +6,6 @@
 - The layout of the Calculator is using TableLayout
 
 - For calculation of the expression, the app is using ![exp4j](https://www.objecthunter.net/exp4j/) library (Expression for Java)
+### Preview
 
 ![preview](preview/preview.gif)
